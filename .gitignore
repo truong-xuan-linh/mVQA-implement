@@ -1,0 +1,5 @@
+*-info
+build
+*ipynb*
+__pycache__
+*best*

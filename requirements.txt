@@ -1,0 +1,10 @@
+streamlit
+pyyaml==5.1
+torch
+numpy
+transformers
+tensorflow
+unidecode
+torchvision
+gdown
+'git+https://github.com/facebookresearch/detectron2.git'
