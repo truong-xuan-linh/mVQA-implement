@@ -2,6 +2,7 @@ import yaml
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
+from vqa.src import root_dir
 
 class TransformerEncoderBlock(layers.Layer):
     def __init__(self, embed_dim, dense_dim, num_heads, **kwargs):
@@ -58,7 +59,8 @@ class PositionalEmbedding(layers.Layer):
 class TransformerDecoderBlock(layers.Layer):
     def __init__(self, embed_dim, ff_dim, num_heads, **kwargs):
         super().__init__(**kwargs)
-        self.config  = yaml.load(open("./vqa/storage/config.yml"), Loader = yaml.loader.SafeLoader)
+        self.ROOT_dir = root_dir.find_ROOT_dir()
+        self.config  = yaml.load(open(f"{self.ROOT_dir}/storage/config.yml"), Loader = yaml.loader.SafeLoader)
         
         self.embed_dim = embed_dim
         self.ff_dim = ff_dim

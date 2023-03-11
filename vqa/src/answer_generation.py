@@ -2,8 +2,8 @@ import yaml
 import numpy as np
 import tensorflow as tf
 
-from vqa.src.image_extraction import ImageExtraction
-from vqa.src.question_extraction import QuestionExtraction
+from vqa.src.extraction.image_extraction import ImageExtraction
+from vqa.src.extraction.question_extraction import QuestionExtraction
 from vqa.src.model import Model
 from vqa.src.annotation_setup import AnnotationSetup
 

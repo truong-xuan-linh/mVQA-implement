@@ -2,8 +2,8 @@ import yaml
 from tensorflow import keras
 
 from vqa.src import root_dir
-from vqa.src.image_extraction import ImageExtraction
-from vqa.src.question_extraction import QuestionExtraction
+from vqa.src.extraction.image_extraction import ImageExtraction
+from vqa.src.extraction.question_extraction import QuestionExtraction
 from vqa.src.transformer import TransformerModel, TransformerDecoderBlock, TransformerEncoderBlock
 
 class Model():

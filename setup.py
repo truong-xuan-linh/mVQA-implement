@@ -11,13 +11,14 @@ requirements = ["streamlit",\
 "tensorflow",\
 "unidecode",\
 "torchvision",\
-"gdown"]
+"gdown",\
+"sentencepiece"]
 setuptools.setup(
-    name="vqa-python",
-    version="0.0.1",
+    name="vlmvqa-python",
+    version="0.0.4",
     author="Trương Xuân Linh",
     author_email="truonglinh1342001@gmail.com",
-    description="mVQA tool",
+    description="VLmVQA tool",
     long_description="mVQA tool",
     long_description_content_type="text/markdown",
     url="https://github.com/truong-xuan-linh/mVQA-webapp",
